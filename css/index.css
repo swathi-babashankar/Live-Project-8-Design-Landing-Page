@@ -1,0 +1,190 @@
+ /* -------Styling the elements------ */
+
+ *{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .main-div nav{
+    display: flex; 
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: -35px;
+  }
+
+  .nav-items{
+     display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    gap: 40px;
+    color: rgb(55, 59, 165);
+    font-family: "Roboto";
+  }
+
+  .signin-btn{
+    border: none;
+    padding: 7px 9px;
+    border-radius: 1.2em;
+    background: linear-gradient(#e954dd, #904fdc);
+    color: #fff;
+    cursor: pointer;
+  }
+
+  div.intro-section{
+    display: flex;
+    margin-left: 85PX; 
+    margin-top: 150px;
+  }
+
+  .left-section{
+    margin-left: 45px;
+   
+  }
+
+  .left-section h1{
+    font-size: 60px;
+    color: rgb(55, 59, 165);
+   
+  }
+
+  .left-section h4{
+    margin-top: 60px;
+    width: 300px;
+    color: rgb(156, 150, 150);
+    line-height: 20px;
+    font-family: "roboto";
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .learn-more-btn{
+    margin-top: 60px;
+    padding: 12px 35px;
+    border-radius: 1.8em;
+    border: none;
+    background: linear-gradient(#e954dd, #904fdc);
+    color: #fff;
+    font-size: 20px;
+    font-family: "roboto";
+    cursor: pointer;
+  }
+
+  .main-div::before
+  {
+    content: " ";
+    background: url("/images/backcover.svg");
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    width: 53vw;
+    height: 100vh;
+    z-index: -2;  
+     
+    
+  }
+
+  .imgs-div{
+    display: flex;
+    margin-top: -150px;
+   
+  }
+  
+  .vector-dot{
+    margin-right: 50px;
+  }
+
+  .vector-img{
+    margin-top: 270px;
+    margin-right: -55px;
+    height: 200px;
+    width: 100px;
+
+  }
+
+  img[src="/images/intro-img.svg"]{
+    width: 650px;
+    margin-left: 170px;
+
+
+  }
+
+  /*----- Mobile Responsive-----  */
+
+   @media(max-width: 1200px){
+
+      nav{
+      flex-direction: column;
+      justify-content: center;
+     } 
+
+
+     img[src="/images/logo.svg"]{
+       align-self: center; 
+       width: 250px;
+      height: 50px;
+     } 
+
+
+     div.nav-items{
+
+      flex-direction: column;
+      margin-top: 30px;
+     }
+
+
+     button.signin-btn{
+      margin-top: 25px;
+      padding: 0;
+      width: 70px;
+      height: 20px;
+      align-self: center;
+     }
+
+     div.intro-section{
+       flex-direction: column;
+       
+     }
+      
+     div.left-section h1{
+       margin-top: 350px;
+      }
+
+     .imgs-div{
+
+       margin-top: -450px;
+       margin-left: -150px;
+     }
+
+      img[src="/images/intro-img.svg"]{
+       justify-self: center;
+        width: 400px;
+        height: 400px;
+        margin-top: -300px;
+        margin-left: -100px;
+        
+     }
+
+      .vector-img{
+        margin-top: -130px;
+        margin-left: 100px;
+        width: 50px;
+      }
+
+      .vector-dot{
+        margin-top: -180px;
+        margin-left: 30px;
+      }
+      
+     
+  } 
+
+
+  /* media query for even small screen */
+
+   @media(max-width: 750px) {
+
+    nav{
+      justify-content: center;
+    } 
+  }
